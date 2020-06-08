@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css?family=Gamja+Flower');
+
+html, body {
+	width: 100%;
+	height: 100%;
+	font-family: 'Gamja Flower';
+	font-size: 20px;
+	color: #222;
+	overflow: hidden;
+}
+.header{
+	background-image:url("../images/bg-woft.jpg");
+    background-size: cover;
+    background-position: center;
+	background-attachment: fixed;
+}
+.navbar{
+	background-image: linear-gradient(45deg, rgb(2, 29, 39,0.3) 55%, rgb(88, 117, 116,0.3)),url("../images/bg-woft.jpg");
+	height: 130px;
+	background-size: cover;
+    background-position: center;
+	background-attachment: fixed;
+	border-bottom:1px solid #5a5a5a;
+}
+.menu {
+	float: left;
+	width: 600px;
+	height: 130px;
+}
+.navbar-toggler{
+	border: 0px;
+	outline: none;
+}
+.dark-blue-text {
+	color: #0A38F5;
+}
+.fa-1x {
+	font-size: 1.5rem;
+}
+.onmenu{
+	padding-top: 20px;
+	height: 130px;
+	width: 100px;
+	border:1px solid #5a5a5a;
+	color: white;
+	padding-right: 0px;
+}
+.icon1{
+	list-style-type: light;
+}
+.menu ul li:hover .onmenu{
+	background: rgba(90, 90, 90,0.5);
+}
+.menu :hover .icon1{
+	color:#fbff07;
+}
+.menu :hover .icon2{
+	color:#00a9d3;
+}
+.menu :hover .icon3{
+	color:#89d300;
+}
+.menu :hover .icon6{
+	color:#d32a00;
+}
+.menu :hover .icon5{
+	color:#4a00d3;
+}
+.menu :hover .icon4{
+	color:#d30000;
+}
+.onmenu li{
+	list-style: none;
+	text-decoration: none;
+	text-align: center;
+	text-align: center;
+	width: 100px;
+}
+.menu li a {
+	list-style: none;
+    text-decoration: none;
+	color: aliceblue;
+	width: 100%;
+	font-weight: 500;
+	height: 100%;
+}
+.menu ul{
+	padding-inline-start: 0px;
+}
+.menu li {
+    display: inline-block;
+}
+.csssearch{
+    position: relative;
+    border: 2.5px solid white;
+    float: right;
+    margin-top: 10px;
+    margin-right: 0px;
+	width: 300px;
+    height: 60px;
+    border-radius: 40px;
+    background-color: rgba(18, 17, 17, 0.5); 
+}
+.csssearch input,button{
+	font-size: 70%;
+	/* outline: none; */
+    color: #cccccc;
+    border: 0px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    
+}
+.csssearch input[type=text]{
+    background-color: #00a9d300;
+	height: 30px;
+    width: 180px;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 20px;
+    text-rendering: auto;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    text-align: start;
+    cursor: text;
+    font: 400 13.3333px Arial;
+    font-weight: 500;
+    font-size: 20px;
+    outline: none;
+}
+.csssearch button{
+	position: relative;
+}
+.csssearch button[type=submit]{
+    height: 55px;
+    float: right;
+    cursor: pointer;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+    background: linear-gradient(45deg,rgb(134, 179, 209) 5%,  rgb(237, 179, 191));
+    width: 70px;
+}
+button .icon-search{
+    font-size: 150%;
+    position: absolute;
+    color:#4d6d9a;
+    top: 30%;
+    left: 34%;
+    transform: translate(-50%,-50%);
+    transform: rotate(85deg);
+    /* transform: rotateZ(90deg); */
+}
+.carousel-inner img {
+    width: 100%;
+	/* max-height: 100%; */
+	opacity: 0.9;
+}
+@media (max-width: 1265px){
+	.csssearch input[type='text']{
+		width: 100px;
+	}
+	.csssearch{
+		width: 200px;
+	}
+
+
+}
+@media (max-width: 1164px){
+	.csssearch input[type='text']{
+		display: none;
+	}
+	.csssearch{
+		background: #00a9d300;
+		border: 0px;
+		width: 70px;
+		margin-right: -40px;
+	}
+	.csssearch button[type=submit]{
+		border-top-right-radius: 0px;
+		border-bottom-right-radius: 0px;
+		border-top-left-radius: 40px;
+		border-bottom-left-radius: 40px;
+		
+	}
+}
+@media (max-width: 994px){
+	.menu{
+		width: 472px;
+	}
+	.onmenu{
+		width: 80px;
+	}
+	.menu li{
+		width: 100%;
+	}
+	.onmenu li{
+		font-size: 75%;
+	}
+}
+@media (max-width: 875px){
+	.menu{
+		width: 352px;
+	}
+	.onmenu{
+		width: 60px;
+	}
+}
+@media (max-width: 767px){
+	.onmenu{
+		width: 300px;
+		height: 50px;
+		border: 0px;
+		border-bottom: 1px solid black;
+		background: rgba(0, 169, 211, 0.5);
+
+	}
+	.onmenu .fas{
+		display: none;
+	}
+	.menu li{
+		margin-left: 5px;
+		display: inline;
+	}
+	.menu{
+		background: rgba(0, 0, 0, 0.7);
+		margin-top: 40px;
+		width: 308px;
+		height: 302px;
+		border: 2px solid #4a00d3;
+	}
+	.menu ul li:hover .onmenu{
+		box-shadow: 5px 5px 15px cyan;
+	}
+}
